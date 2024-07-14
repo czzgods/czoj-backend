@@ -4,7 +4,7 @@ import com.cz.czoj.common.BaseResponse;
 import com.cz.czoj.common.ErrorCode;
 import com.cz.czoj.common.ResultUtils;
 import com.cz.czoj.exception.BusinessException;
-import com.cz.czoj.model.dto.postthumb.QuestionSubmitAddRequest;
+import com.cz.czoj.model.dto.questionsubmit.QuestionSubmitAddRequest;
 import com.cz.czoj.model.entity.User;
 import com.cz.czoj.service.QuestionSubmitService;
 import com.cz.czoj.service.UserService;
@@ -37,18 +37,16 @@ public class QuestionSubmitController {
      *
      * @param questionSubmitAddRequest
      * @param request
-     * @return resultNum 本次点赞变化数
+     * @return resultNum
      */
     @PostMapping("/")
-    public BaseResponse<Integer> doThumb(@RequestBody QuestionSubmitAddRequest questionSubmitAddRequest,
+    public BaseResponse<Long> doQuestionSubmit(@RequestBody QuestionSubmitAddRequest questionSubmitAddRequest,
             HttpServletRequest request) {
-        if (questionSubmitAddRequest == null || questionSubmitAddRequest.getPostId() <= 0) {
+        if (questionSubmitAddRequest == null || questionSubmitAddRequest.getQuestionId() <= 0) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
         }
-        // 登录才能点赞
         final User loginUser = userService.getLoginUser(request);
-        long postId = questionSubmitAddRequest.getPostId();
-        int result = questionSubmitService.doQuestionSubmit(postId, loginUser);
+        long result = questionSubmitService.doQuestionSubmit(questionSubmitAddRequest, loginUser);
         return ResultUtils.success(result);
     }
 
