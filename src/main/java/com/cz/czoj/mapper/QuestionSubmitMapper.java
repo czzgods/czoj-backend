@@ -2,6 +2,7 @@ package com.cz.czoj.mapper;
 
 import com.cz.czoj.model.entity.QuestionSubmit;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
 * @author 李钟意
@@ -9,6 +10,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @createDate 2024-07-14 15:16:08
 * @Entity com.cz.czoj.model.entity.QuestionSubmit
 */
+@Mapper
 public interface QuestionSubmitMapper extends BaseMapper<QuestionSubmit> {
 
 }
