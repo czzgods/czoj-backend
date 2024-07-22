@@ -102,3 +102,6 @@ knife4j:
     description: czoj-backend
     email: 3302076969@qq.com
     concat: "我想喝瓶怡宝"
+#代码沙箱配置
+codesandbox:
+  type: example
