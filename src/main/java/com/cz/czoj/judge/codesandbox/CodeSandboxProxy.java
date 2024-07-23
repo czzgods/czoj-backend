@@ -1,4 +1,4 @@
-package com.cz.czoj.judge;
+package com.cz.czoj.judge.codesandbox;
 
 import com.cz.czoj.judge.codesandbox.CodeSandbox;
 import com.cz.czoj.judge.codesandbox.model.ExecuteCodeRequest;
