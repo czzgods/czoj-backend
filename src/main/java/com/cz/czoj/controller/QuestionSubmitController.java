@@ -41,7 +41,7 @@ public class QuestionSubmitController {
     private UserService userService;
 
     /**
-     * 点赞 / 取消点赞
+     *
      *
      * @param questionSubmitAddRequest
      * @param request
