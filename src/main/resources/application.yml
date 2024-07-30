@@ -104,4 +104,4 @@ knife4j:
     concat: "我想喝瓶怡宝"
 #代码沙箱配置
 codesandbox:
-  type: example
+  type: remote

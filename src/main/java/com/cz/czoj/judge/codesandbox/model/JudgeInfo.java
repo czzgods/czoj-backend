@@ -1,4 +1,4 @@
-package com.cz.czoj.model.dto.questionsubmit;
+package com.cz.czoj.judge.codesandbox.model;
 
 import lombok.Data;
 

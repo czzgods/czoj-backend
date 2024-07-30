@@ -1,6 +1,6 @@
 package com.cz.czoj.judge.strategy;
 
-import com.cz.czoj.model.dto.questionsubmit.JudgeInfo;
+import com.cz.czoj.judge.codesandbox.model.JudgeInfo;
 
 /**
  * 判题策略

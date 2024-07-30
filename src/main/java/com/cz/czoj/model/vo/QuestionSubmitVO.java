@@ -2,7 +2,7 @@ package com.cz.czoj.model.vo;
 
 import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.annotation.TableField;
-import com.cz.czoj.model.dto.questionsubmit.JudgeInfo;
+import com.cz.czoj.judge.codesandbox.model.JudgeInfo;
 import com.cz.czoj.model.entity.QuestionSubmit;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;

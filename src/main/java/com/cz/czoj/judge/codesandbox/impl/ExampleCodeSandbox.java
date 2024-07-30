@@ -3,7 +3,7 @@ package com.cz.czoj.judge.codesandbox.impl;
 import com.cz.czoj.judge.codesandbox.CodeSandbox;
 import com.cz.czoj.judge.codesandbox.model.ExecuteCodeRequest;
 import com.cz.czoj.judge.codesandbox.model.ExecuteCodeResponse;
-import com.cz.czoj.model.dto.questionsubmit.JudgeInfo;
+import com.cz.czoj.judge.codesandbox.model.JudgeInfo;
 import com.cz.czoj.model.enums.JudgeInfoMessageEnum;
 import com.cz.czoj.model.enums.QuestionSubmitStatusEnum;
 

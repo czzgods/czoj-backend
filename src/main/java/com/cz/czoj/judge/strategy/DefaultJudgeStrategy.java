@@ -3,7 +3,7 @@ package com.cz.czoj.judge.strategy;
 import cn.hutool.json.JSONUtil;
 import com.cz.czoj.model.dto.question.JudgeCase;
 import com.cz.czoj.model.dto.question.JudgeConfig;
-import com.cz.czoj.model.dto.questionsubmit.JudgeInfo;
+import com.cz.czoj.judge.codesandbox.model.JudgeInfo;
 import com.cz.czoj.model.entity.Question;
 import com.cz.czoj.model.enums.JudgeInfoMessageEnum;
 
